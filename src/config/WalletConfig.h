@@ -10,10 +10,10 @@
 namespace WalletConfig
 {
     /* The prefix your coins address starts with */
-    const std::string_view addressPrefix = "bio";
+    const std::string_view addressPrefix = "TL";
 
     /* Your coins 'Ticker', e.g. Monero = XMR, Bitcoin = BTC */
-    const std::string ticker = "bio";
+    const std::string ticker = "TL";
 
     /* The filename to output the CSV to in save_csv */
     const std::string csvFilename = "transactions.csv";
@@ -33,7 +33,8 @@ namespace WalletConfig
     const std::string walletdName = "lumacoin-service";
 
     /* The full name of your crypto */
-    const std::string coinName = std::string(CryptoNote::CRYPTONOTE_NAME);
+    /* const std::string coinName = std::string(CryptoNote::CRYPTONOTE_NAME); */
+    const std::string coinName = std::string(CryptoNote::LumaCoin);
 
     /* Where can your users contact you for support? E.g. discord */
     const std::string contactLink = "https://chat.lumaco.in";
