@@ -27,7 +27,7 @@ namespace CryptoNote
 
         const size_t CRYPTONOTE_MAX_TX_SIZE = 1000000000;
 
-        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 13341;
+        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 35535;
 
         const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 40;
 
@@ -61,8 +61,7 @@ namespace CryptoNote
         static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
         const char GENESIS_COINBASE_TX_HEX[] =
-            "010a01ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210142694232c5b04151"
-            "d9e4c27d31ec7a68ea568b19488cfcb422659a07a0e44dd5";
+            "010a01ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210142694232c5b04151";
 
         static_assert(
             sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1,
@@ -288,15 +287,15 @@ namespace CryptoNote
             FORK_HEIGHTS_SIZE == 0 || CURRENT_FORK_INDEX < FORK_HEIGHTS_SIZE,
             "CURRENT_FORK_INDEX out of range of FORK_HEIGHTS!");
 
-        const char CRYPTONOTE_BLOCKS_FILENAME[] = "blocks.bin";
+        const char CRYPTONOTE_BLOCKS_FILENAME[] = "lumablocks.bin";
 
-        const char CRYPTONOTE_BLOCKINDEXES_FILENAME[] = "blockindexes.bin";
+        const char CRYPTONOTE_BLOCKINDEXES_FILENAME[] = "lumablockindexes.bin";
 
-        const char CRYPTONOTE_POOLDATA_FILENAME[] = "poolstate.bin";
+        const char CRYPTONOTE_POOLDATA_FILENAME[] = "lumapoolstate.bin";
 
-        const char P2P_NET_DATA_FILENAME[] = "p2pstate.bin";
+        const char P2P_NET_DATA_FILENAME[] = "lumap2pstate.bin";
 
-        const char MINER_CONFIG_FILE_NAME[] = "miner_conf.json";
+        const char MINER_CONFIG_FILE_NAME[] = "lumaminer_conf.json";
     } // namespace parameters
 
     const char CRYPTONOTE_NAME[] = "LumaCoin";
@@ -332,9 +331,9 @@ namespace CryptoNote
     const uint64_t BLOCKS_SYNCHRONIZING_DEFAULT_COUNT = 100; // by default, blocks count in blocks downloading
     const size_t COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT = 1000;
 
-    const int P2P_DEFAULT_PORT = 11897;
+    const int P2P_DEFAULT_PORT = 39699;
 
-    const int RPC_DEFAULT_PORT = 11898;
+    const int RPC_DEFAULT_PORT = 39700;
 
     const int SERVICE_DEFAULT_PORT = 8070;
 
@@ -380,9 +379,9 @@ namespace CryptoNote
     const std::string LICENSE_URL = "https://github.com/turtlecoin/turtlecoin/blob/master/LICENSE";
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
-        {0xb4, 0x1c, 0x2a, 0x3c, 0xcf, 0x52, 0x57, 0x41, 0x65, 0xf9, 0x91, 0xa4, 0xb6, 0xc1, 0x43, 0xe9}};
+        {0x53, 0x54, 0x55, 0x3c, 0x51, 0x52, 0x57, 0x41, 0x65, 0x59, 0x91, 0x54, 0x56, 0x51, 0x43, 0x59}};
 
     const char *const SEED_NODES[] = {
-        "51.68.175.2:11897" // rock
+        "51.68.175.2:39699" // rock
     };
 } // namespace CryptoNote
