@@ -10,10 +10,10 @@
 namespace WalletConfig
 {
     /* The prefix your coins address starts with */
-    const std::string_view addressPrefix = "TL";
+    const std::string_view addressPrefix = "biok";
 
     /* Your coins 'Ticker', e.g. Monero = XMR, Bitcoin = BTC */
-    const std::string ticker = "TL";
+    const std::string ticker = "biok";
 
     /* The filename to output the CSV to in save_csv */
     const std::string csvFilename = "transactions.csv";
@@ -26,11 +26,11 @@ namespace WalletConfig
     const std::string daemonName = "LumaCoind";
 
     /* The name to call this wallet */
-    const std::string walletName = "zedwallet";
+    const std::string walletName = "LumaWallet";
 
     /* The name of service/walletd, the programmatic rpc interface to a
        wallet */
-    const std::string walletdName = "lumacoin-service";
+    const std::string walletdName = "lumacoinservice";
 
     /* The full name of your crypto */
     const std::string coinName = std::string(CryptoNote::CRYPTONOTE_NAME); 
